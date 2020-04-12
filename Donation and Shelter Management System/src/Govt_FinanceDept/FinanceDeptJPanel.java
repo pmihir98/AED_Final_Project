@@ -80,6 +80,10 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         valLable = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+        setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 51, 51)));
+
+        addBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         addBtn.setText("Add Income");
         addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,8 +91,10 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Source of Income");
 
+        jLabel4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel4.setText("Amount (in $)");
 
         amountTxt.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +103,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel5.setText("Total Income");
 
         sourceIncomeTxt.addActionListener(new java.awt.event.ActionListener() {
@@ -126,6 +133,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workQueTbl);
 
+        approveReqBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         approveReqBtn.setText("ApproveRequest");
         approveReqBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,10 +154,10 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(incomeTbl);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel2.setText("Organization: ");
 
-        valLable.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        valLable.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valLable.setText("value_label");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -182,7 +190,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(430, 430, 430)
                         .addComponent(addBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +219,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addComponent(addBtn)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

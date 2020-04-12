@@ -71,13 +71,19 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         HealthCareBtn = new javax.swing.JButton();
         AddEventBtn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        eventTypeBox = new javax.swing.JComboBox<>();
+        eventTypeBox = new javax.swing.JComboBox<String>();
         valueLabel = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+        setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 51, 51)));
+
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel2.setText("Schedule Event:");
 
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel4.setText("Event date and Time:");
 
+        updateEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         updateEventBtn.setText("Update");
 
         evntDateTime.addActionListener(new java.awt.event.ActionListener() {
@@ -86,6 +92,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
 
+        deleteEvntBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         deleteEvntBtn.setText("Delete");
         deleteEvntBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,9 +100,10 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel3.setText("Event Name:");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
 
         eventsTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -111,7 +119,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(eventsTbl);
 
-        HealthCareBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        HealthCareBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         HealthCareBtn.setText("Health care!!");
         HealthCareBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +127,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
 
+        AddEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         AddEventBtn.setText("Add ");
         AddEventBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,11 +135,13 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel5.setText("Event Type");
 
-        eventTypeBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cultural", "SexualAwareness", "Sports" }));
+        eventTypeBox.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        eventTypeBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cultural", "SexualAwareness", "Sports" }));
 
-        valueLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -138,7 +149,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
+                .addContainerGap(52, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +208,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
                     .addComponent(updateEventBtn)
                     .addComponent(deleteEvntBtn)
                     .addComponent(HealthCareBtn))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -7,6 +7,7 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Businesss.EcoSystem;
 import java.awt.CardLayout;
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 /*
@@ -29,6 +30,10 @@ public class MainJframe extends javax.swing.JFrame {
     public MainJframe() {
         initComponents();
         system = dB4OUtil.retrieveSystem();
+       loginJButton.setBackground(Color.WHITE);
+        loginJButton.setOpaque(true);
+        logoutJButton.setBackground(Color.WHITE);
+        logoutJButton.setOpaque(true);
 
     }
 

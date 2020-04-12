@@ -17,6 +17,7 @@ import Businesss.EcoSystem;
 import DonationOrganization.CounsellorSolutionJPanel;
 import DonationOrganization.ReqToGovJPanel;
 import java.awt.CardLayout;
+import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -44,6 +45,8 @@ public class CounsellorJPanel extends javax.swing.JPanel {
         this.business = business;
 
         populateCounsellingRequest();
+        jButton1.setBackground(Color.RED);
+        jButton1.setOpaque(true);
     }
 
     /**
@@ -61,6 +64,9 @@ public class CounsellorJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(240, 184, 69));
+        setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
 
         counsellorTabl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -83,24 +89,33 @@ public class CounsellorJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(counsellorTabl);
 
+        jButton4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton4.setText("Delete");
+        jButton4.setBorderPainted(false);
+        jButton4.setContentAreaFilled(false);
+        jButton4.setDefaultCapable(false);
+        jButton4.setFocusable(false);
+        jButton4.setOpaque(true);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
+        jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton1.setText("Update Solution");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.black, java.awt.Color.red, java.awt.Color.black, java.awt.Color.red));
+        jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         jLabel2.setText("Organization: ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         jLabel3.setText("value_label");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -109,7 +124,6 @@ public class CounsellorJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(111, 111, 111)
@@ -119,8 +133,12 @@ public class CounsellorJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createSequentialGroup()
                             .addGap(112, 112, 112)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton1))
-                .addContainerGap(158, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(156, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,9 +151,9 @@ public class CounsellorJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jButton1)
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
                 .addComponent(jButton4)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

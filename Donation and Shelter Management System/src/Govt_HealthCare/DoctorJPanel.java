@@ -64,6 +64,9 @@ public class DoctorJPanel extends javax.swing.JPanel {
         assignToMeBtn = new javax.swing.JButton();
         processAndUpdateBtn = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+        setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
         doctorTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -77,12 +80,13 @@ public class DoctorJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(doctorTbl);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
 
-        valueLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
 
+        assignToMeBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         assignToMeBtn.setText("Assign To Me");
         assignToMeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +94,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
             }
         });
 
+        processAndUpdateBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         processAndUpdateBtn.setText("Process");
         processAndUpdateBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +119,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(processAndUpdateBtn))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,7 +134,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(assignToMeBtn)
                     .addComponent(processAndUpdateBtn))
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
