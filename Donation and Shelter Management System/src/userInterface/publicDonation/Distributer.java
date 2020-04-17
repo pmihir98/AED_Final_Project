@@ -37,6 +37,7 @@ public class Distributer extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         DistributerTable = new javax.swing.JTable();
         AdvOpenBtn = new javax.swing.JButton();
+        BackToPanelBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,12 +61,23 @@ public class Distributer extends javax.swing.JFrame {
             }
         });
 
+        BackToPanelBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        BackToPanelBtn.setText("<<<BACK<<<");
+        BackToPanelBtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BackToPanelBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackToPanelBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(131, 131, 131)
+                .addContainerGap()
+                .addComponent(BackToPanelBtn)
+                .addGap(28, 28, 28)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(122, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -77,7 +89,9 @@ public class Distributer extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackToPanelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(51, 51, 51)
                 .addComponent(AdvOpenBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(210, Short.MAX_VALUE))
@@ -121,6 +135,10 @@ public class Distributer extends javax.swing.JFrame {
         frameText.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
     }//GEN-LAST:event_AdvOpenBtnActionPerformed
+
+    private void BackToPanelBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackToPanelBtnActionPerformed
+        dispose();
+    }//GEN-LAST:event_BackToPanelBtnActionPerformed
     
     /**
      * @param args the command line arguments
@@ -159,6 +177,7 @@ public class Distributer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AdvOpenBtn;
+    private javax.swing.JButton BackToPanelBtn;
     private static javax.swing.JTable DistributerTable;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

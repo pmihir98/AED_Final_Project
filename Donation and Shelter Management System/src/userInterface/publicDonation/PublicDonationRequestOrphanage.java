@@ -19,8 +19,17 @@ import Businesss.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.Date;
+import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 
 /**
  *
@@ -286,6 +295,63 @@ public class PublicDonationRequestOrphanage extends javax.swing.JPanel {
         addrTxtField.setText("");
         mailTxtField.setText("");
         amountTxtField.setText("");
+
+String to = "joshnikhil612@gmail.com";
+    String from = "joshnikhil612@gmail.com"; 
+    String host = "smtp.gmail.com"; 
+    String password = "devil@333";
+    
+        Properties properties = new Properties();
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.auth","true");
+        properties.put("mail.smtp.starttls.enable","true");
+        properties.put("mail.smtp.host","smtp.gmail.com");
+        properties.put("mail.smtp.port", "465");
+        properties.put("mail.smtp.password", "devil@333");
+        properties.put("mail.smtp.socketFactory.port", 465);
+        properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        properties.put("mail.smtp.socketFactory.fallback", "false");
+    
+        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
+         protected PasswordAuthentication getPasswordAuthenticator(){
+              String username = from;
+ String password = "devil@333";
+    if ((username != null) && (username.length() > 0) && (password != null) && (password.length() > 0))
+           return new PasswordAuthentication(from,password);
+             return null;
+         }
+        });
+        
+   
+    try{
+     // Create a default MimeMessage object.
+     MimeMessage message = new MimeMessage(session);
+          String Name = nameTxtField.getText();
+        String Amount = amountTxtField.getText();
+     // Set From: header field of the header.
+     message.setFrom(new InternetAddress(from));
+
+     // Set To: header field of the header.
+     message.addRecipient(Message.RecipientType.TO,
+                              new InternetAddress(to));
+     
+          message.setFrom(new InternetAddress(from));
+        
+     // Set Subject: header field
+     message.setSubject("Notifying Donater");
+
+     // Now set the actual message
+     message.setText("Donation is recieved sucessfully donated to Orphanage. Please reach out to us on +18573423232 or you can mail us on donation@orphanage.com");
+
+     // Send message
+     Transport transport = session.getTransport("smtp");
+            transport.connect("smtp.gmail.com" , 465 , from, password);
+          Transport.send(message,from, password);
+
+    }
+    catch (MessagingException mex) {
+     mex.printStackTrace();
+    }
         
     }//GEN-LAST:event_donateBtnActionPerformed
 
