@@ -76,21 +76,32 @@ public class EventManagerJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(240, 184, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 51, 51)));
+        setLayout(null);
+        add(eventName);
+        eventName.setBounds(213, 319, 132, 20);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel2.setText("Schedule Event:");
+        add(jLabel2);
+        jLabel2.setBounds(53, 243, 89, 17);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel4.setText("Event date and Time:");
+        add(jLabel4);
+        jLabel4.setBounds(53, 359, 120, 17);
 
         updateEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         updateEventBtn.setText("Update");
+        add(updateEventBtn);
+        updateEventBtn.setBounds(138, 397, 73, 25);
 
         evntDateTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 evntDateTimeActionPerformed(evt);
             }
         });
+        add(evntDateTime);
+        evntDateTime.setBounds(210, 357, 136, 20);
 
         deleteEvntBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         deleteEvntBtn.setText("Delete");
@@ -99,12 +110,18 @@ public class EventManagerJPanel extends javax.swing.JPanel {
                 deleteEvntBtnActionPerformed(evt);
             }
         });
+        add(deleteEvntBtn);
+        deleteEvntBtn.setBounds(229, 397, 69, 25);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel3.setText("Event Name:");
+        add(jLabel3);
+        jLabel3.setBounds(53, 321, 73, 17);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
+        add(jLabel1);
+        jLabel1.setBounds(53, 34, 109, 23);
 
         eventsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -119,6 +136,9 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(eventsTbl);
 
+        add(jScrollPane1);
+        jScrollPane1.setBounds(53, 75, 510, 128);
+
         HealthCareBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         HealthCareBtn.setText("Health care!!");
         HealthCareBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -126,6 +146,8 @@ public class EventManagerJPanel extends javax.swing.JPanel {
                 HealthCareBtnActionPerformed(evt);
             }
         });
+        add(HealthCareBtn);
+        HealthCareBtn.setBounds(367, 395, 196, 27);
 
         AddEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         AddEventBtn.setText("Add ");
@@ -134,82 +156,28 @@ public class EventManagerJPanel extends javax.swing.JPanel {
                 AddEventBtnActionPerformed(evt);
             }
         });
+        add(AddEventBtn);
+        AddEventBtn.setBounds(53, 397, 67, 25);
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel5.setText("Event Type");
+        add(jLabel5);
+        jLabel5.setBounds(53, 281, 73, 17);
 
         eventTypeBox.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         eventTypeBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cultural", "SexualAwareness", "Sports" }));
+        eventTypeBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eventTypeBoxActionPerformed(evt);
+            }
+        });
+        add(eventTypeBox);
+        eventTypeBox.setBounds(213, 278, 125, 23);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(52, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(AddEventBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(updateEventBtn)
-                        .addGap(18, 18, 18)
-                        .addComponent(deleteEvntBtn)
-                        .addGap(69, 69, 69)
-                        .addComponent(HealthCareBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(87, 87, 87)
-                        .addComponent(eventTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(valueLabel))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(87, 87, 87)
-                        .addComponent(eventName, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(37, 37, 37)
-                        .addComponent(evntDateTime, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(95, 95, 95))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(valueLabel))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(eventTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(eventName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(evntDateTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddEventBtn)
-                    .addComponent(updateEventBtn)
-                    .addComponent(deleteEvntBtn)
-                    .addComponent(HealthCareBtn))
-                .addContainerGap(66, Short.MAX_VALUE))
-        );
+        add(valueLabel);
+        valueLabel.setBounds(168, 34, 228, 23);
     }// </editor-fold>//GEN-END:initComponents
 
     private void evntDateTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evntDateTimeActionPerformed
@@ -261,6 +229,10 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         
 
     }//GEN-LAST:event_deleteEvntBtnActionPerformed
+
+    private void eventTypeBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eventTypeBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eventTypeBoxActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

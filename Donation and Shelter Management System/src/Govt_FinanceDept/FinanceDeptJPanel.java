@@ -28,7 +28,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Utkarsh
+ * @author Mihir
  */
 public class FinanceDeptJPanel extends javax.swing.JPanel {
 
@@ -82,6 +82,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(240, 184, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 51, 51)));
+        setLayout(null);
 
         addBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         addBtn.setText("Add Income");
@@ -90,27 +91,41 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
                 addBtnActionPerformed(evt);
             }
         });
+        add(addBtn);
+        addBtn.setBounds(431, 456, 118, 27);
 
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Source of Income");
+        add(jLabel3);
+        jLabel3.setBounds(143, 385, 110, 19);
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel4.setText("Amount (in $)");
+        add(jLabel4);
+        jLabel4.setBounds(143, 417, 113, 19);
+        add(totalIncomeTxt);
+        totalIncomeTxt.setBounds(407, 359, 142, 20);
 
         amountTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 amountTxtActionPerformed(evt);
             }
         });
+        add(amountTxt);
+        amountTxt.setBounds(407, 418, 142, 20);
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel5.setText("Total Income");
+        add(jLabel5);
+        jLabel5.setBounds(143, 358, 81, 19);
 
         sourceIncomeTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sourceIncomeTxtActionPerformed(evt);
             }
         });
+        add(sourceIncomeTxt);
+        sourceIncomeTxt.setBounds(407, 386, 142, 20);
 
         workQueTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -133,6 +148,9 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workQueTbl);
 
+        add(jScrollPane1);
+        jScrollPane1.setBounds(111, 194, 438, 118);
+
         approveReqBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         approveReqBtn.setText("ApproveRequest");
         approveReqBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +158,8 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
                 approveReqBtnActionPerformed(evt);
             }
         });
+        add(approveReqBtn);
+        approveReqBtn.setBounds(410, 318, 139, 27);
 
         incomeTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -154,73 +174,18 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(incomeTbl);
 
+        add(jScrollPane2);
+        jScrollPane2.setBounds(111, 58, 438, 118);
+
         jLabel2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel2.setText("Organization: ");
+        add(jLabel2);
+        jLabel2.setBounds(111, 11, 105, 23);
 
         valLable.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valLable.setText("value_label");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(approveReqBtn)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(151, 151, 151)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(amountTxt)
-                                    .addComponent(sourceIncomeTxt)
-                                    .addComponent(totalIncomeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addGap(27, 27, 27)
-                                    .addComponent(valLable)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(430, 430, 430)
-                        .addComponent(addBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(96, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(valLable))
-                .addGap(24, 24, 24)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(approveReqBtn)
-                .addGap(13, 13, 13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(totalIncomeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(sourceIncomeTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(amountTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
-                .addComponent(addBtn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        add(valLable);
+        valLable.setBounds(243, 11, 86, 23);
     }// </editor-fold>//GEN-END:initComponents
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed

@@ -25,7 +25,7 @@ import userInterface.publicDonation.PublicDonationManager;
 
 /**
  *
- * @author Utkarsh
+ * @author Mihir
  */
 public class DoctorProcessJPanel extends javax.swing.JPanel {
 
@@ -75,12 +75,17 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(240, 184, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+        setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
+        add(jLabel1);
+        jLabel1.setBounds(103, 38, 109, 23);
 
         valueLabel.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
+        add(valueLabel);
+        valueLabel.setBounds(218, 35, 259, 24);
 
         backBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         backBtn.setText("<<Back");
@@ -89,21 +94,31 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
+        add(backBtn);
+        backBtn.setBounds(1, 36, 73, 25);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel2.setText("Issue/Concern: ");
+        add(jLabel2);
+        jLabel2.setBounds(103, 121, 114, 23);
 
         issueLabel.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         issueLabel.setText("<issue>");
+        add(issueLabel);
+        issueLabel.setBounds(262, 121, 229, 23);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel4.setText("Prescription: ");
+        add(jLabel4);
+        jLabel4.setBounds(103, 191, 96, 23);
 
         presTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 presTxtActionPerformed(evt);
             }
         });
+        add(presTxt);
+        presTxt.setBounds(262, 186, 298, 34);
 
         jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton1.setText("Update");
@@ -112,50 +127,8 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(backBtn)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(valueLabel))
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addGap(45, 45, 45)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(issueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(presTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(backBtn)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(valueLabel)))
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(issueLabel))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(presTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(79, 79, 79)
-                .addComponent(jButton1)
-                .addContainerGap(157, Short.MAX_VALUE))
-        );
+        add(jButton1);
+        jButton1.setBounds(103, 299, 77, 27);
     }// </editor-fold>//GEN-END:initComponents
 
     private void presTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_presTxtActionPerformed

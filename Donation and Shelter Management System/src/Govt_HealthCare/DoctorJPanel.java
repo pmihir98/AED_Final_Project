@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Utkarsh
+ * @author Mihir
  */
 public class DoctorJPanel extends javax.swing.JPanel {
 
@@ -66,6 +66,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(240, 184, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+        setLayout(null);
 
         doctorTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -80,11 +81,18 @@ public class DoctorJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(doctorTbl);
 
+        add(jScrollPane1);
+        jScrollPane1.setBounds(104, 81, 483, 167);
+
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
+        add(jLabel1);
+        jLabel1.setBounds(104, 30, 109, 23);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
+        add(valueLabel);
+        valueLabel.setBounds(231, 30, 228, 23);
 
         assignToMeBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         assignToMeBtn.setText("Assign To Me");
@@ -93,6 +101,8 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 assignToMeBtnActionPerformed(evt);
             }
         });
+        add(assignToMeBtn);
+        assignToMeBtn.setBounds(104, 309, 119, 27);
 
         processAndUpdateBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         processAndUpdateBtn.setText("Process");
@@ -101,41 +111,8 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 processAndUpdateBtnActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(valueLabel))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(assignToMeBtn)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(processAndUpdateBtn))
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(150, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(valueLabel))
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(assignToMeBtn)
-                    .addComponent(processAndUpdateBtn))
-                .addContainerGap(180, Short.MAX_VALUE))
-        );
+        add(processAndUpdateBtn);
+        processAndUpdateBtn.setBounds(504, 309, 83, 27);
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeBtnActionPerformed

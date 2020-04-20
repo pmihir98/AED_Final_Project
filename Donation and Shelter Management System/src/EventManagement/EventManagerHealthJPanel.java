@@ -71,12 +71,17 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(240, 189, 64));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+        setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
+        add(jLabel1);
+        jLabel1.setBounds(189, 23, 123, 23);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
+        add(valueLabel);
+        valueLabel.setBounds(322, 23, 228, 23);
 
         backBtn.setBackground(new java.awt.Color(240, 189, 64));
         backBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -86,6 +91,8 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
+        add(backBtn);
+        backBtn.setBounds(72, 23, 89, 22);
 
         childTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,8 +115,13 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(childTable);
 
+        add(jScrollPane2);
+        jScrollPane2.setBounds(11, 131, 539, 171);
+
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel2.setText("Select student for health Check up from below table");
+        add(jLabel2);
+        jLabel2.setBounds(11, 79, 379, 23);
 
         sendtoHealthCareBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         sendtoHealthCareBtn.setText("Send to Health Care Center");
@@ -118,57 +130,15 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
                 sendtoHealthCareBtnActionPerformed(evt);
             }
         });
+        add(sendtoHealthCareBtn);
+        sendtoHealthCareBtn.setBounds(295, 379, 255, 27);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel3.setText("Problem");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sendtoHealthCareBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(probTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(valueLabel)
-                        .addGap(120, 120, 120))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(valueLabel)
-                    .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2)
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(probTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(sendtoHealthCareBtn)
-                .addContainerGap(102, Short.MAX_VALUE))
-        );
+        add(jLabel3);
+        jLabel3.setBounds(177, 337, 85, 17);
+        add(probTxt);
+        probTxt.setBounds(294, 335, 256, 20);
     }// </editor-fold>//GEN-END:initComponents
 
     private void sendtoHealthCareBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendtoHealthCareBtnActionPerformed

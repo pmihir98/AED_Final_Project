@@ -58,7 +58,6 @@ public class PublicDonationManager extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         donationsListTable = new javax.swing.JTable();
         donateOrphangePublicBtn = new javax.swing.JButton();
-        donateOldAgeHomeBtn = new javax.swing.JButton();
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
@@ -94,14 +93,6 @@ public class PublicDonationManager extends javax.swing.JPanel {
             }
         });
 
-        donateOldAgeHomeBtn.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        donateOldAgeHomeBtn.setText("Donate to Old Age Home");
-        donateOldAgeHomeBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                donateOldAgeHomeBtnActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -117,9 +108,7 @@ public class PublicDonationManager extends javax.swing.JPanel {
                         .addGap(103, 103, 103)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 518, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(donateOrphangePublicBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(donateOldAgeHomeBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                            .addComponent(donateOrphangePublicBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(82, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -133,9 +122,7 @@ public class PublicDonationManager extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addComponent(donateOrphangePublicBtn)
-                .addGap(18, 18, 18)
-                .addComponent(donateOldAgeHomeBtn)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -150,13 +137,8 @@ public class PublicDonationManager extends javax.swing.JPanel {
         
     }//GEN-LAST:event_donateOrphangePublicBtnActionPerformed
 
-    private void donateOldAgeHomeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateOldAgeHomeBtnActionPerformed
-        
-    }//GEN-LAST:event_donateOldAgeHomeBtnActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton donateOldAgeHomeBtn;
     private javax.swing.JButton donateOrphangePublicBtn;
     private javax.swing.JTable donationsListTable;
     private javax.swing.JLabel enterpriseLabel;
