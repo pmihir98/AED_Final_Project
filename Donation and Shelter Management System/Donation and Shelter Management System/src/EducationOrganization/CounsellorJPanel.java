@@ -62,13 +62,13 @@ public class CounsellorJPanel extends javax.swing.JPanel {
         counsellorTabl = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(240, 184, 69));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         setLayout(null);
 
+        counsellorTabl.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         counsellorTabl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -91,7 +91,7 @@ public class CounsellorJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(counsellorTabl);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(113, 101, 487, 214);
+        jScrollPane1.setBounds(800, 0, 487, 214);
 
         jButton4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton4.setText("Delete");
@@ -106,7 +106,7 @@ public class CounsellorJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton4);
-        jButton4.setBounds(493, 387, 107, 27);
+        jButton4.setBounds(1150, 240, 107, 27);
 
         jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton1.setText("Update Solution");
@@ -118,17 +118,12 @@ public class CounsellorJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(493, 344, 107, 25);
+        jButton1.setBounds(1010, 240, 107, 25);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jLabel2.setText("Organization: ");
-        add(jLabel2);
-        jLabel2.setBounds(112, 34, 141, 30);
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jLabel3.setText("value_label");
-        add(jLabel3);
-        jLabel3.setBounds(359, 34, 115, 30);
+        jLabel1.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Consultant.gif"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 4, 800, 430);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -158,8 +153,7 @@ public class CounsellorJPanel extends javax.swing.JPanel {
     private javax.swing.JTable counsellorTabl;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
