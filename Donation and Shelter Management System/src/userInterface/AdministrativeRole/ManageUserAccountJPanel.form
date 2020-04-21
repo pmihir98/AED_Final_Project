@@ -57,14 +57,16 @@
                                   <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="addBtn" min="-2" pref="71" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="deleteRole" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="userNaTxt" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="passTxt" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="passTxt" alignment="1" pref="189" max="32767" attributes="0"/>
+                                      <Component id="userNaTxt" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>

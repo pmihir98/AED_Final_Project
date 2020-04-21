@@ -66,7 +66,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
         processAndUpdateBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(240, 189, 69));
+        setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         setLayout(null);
 
@@ -122,7 +122,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
         WorkRequest sendToGovtHealthCareWorkRequest = (WorkRequest) doctorTbl.getValueAt(selectedRow, 0);
          if(sendToGovtHealthCareWorkRequest instanceof  SendToGovtHealthCareWorkRequest){
              sendToGovtHealthCareWorkRequest.setReceiver(userAccount);
-         }
+         } 
          
          populateReceivedRequests();
     }//GEN-LAST:event_assignToMeBtnActionPerformed
