@@ -21,12 +21,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
+
 /**
  *
- * @author Mihir
+ * @author Utkarsh
  */
 public class DoctorJPanel extends javax.swing.JPanel {
 
+   
     /**
      * Creates new form DoctorJPanel
      */
@@ -45,7 +47,8 @@ public class DoctorJPanel extends javax.swing.JPanel {
         this.userAccount = userAccount;
         this.business = business;
         populateReceivedRequests();
-        valueLabel.setText(organization.getName());
+       
+       // jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("C:\\Final AED Project\\Donation and Shelter Management System\\src\\images\\animated-docotor-gif-5.gif")));
     }
 
     /**
@@ -59,12 +62,11 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         doctorTbl = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        valueLabel = new javax.swing.JLabel();
         assignToMeBtn = new javax.swing.JButton();
         processAndUpdateBtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(240, 184, 69));
+        setBackground(new java.awt.Color(240, 189, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         setLayout(null);
 
@@ -82,17 +84,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(doctorTbl);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(104, 81, 483, 167);
-
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        jLabel1.setText("Organization:  ");
-        add(jLabel1);
-        jLabel1.setBounds(104, 30, 109, 23);
-
-        valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        valueLabel.setText("<change_it_to_name_of_org>");
-        add(valueLabel);
-        valueLabel.setBounds(231, 30, 228, 23);
+        jScrollPane1.setBounds(520, 0, 483, 167);
 
         assignToMeBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         assignToMeBtn.setText("Assign To Me");
@@ -102,7 +94,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
             }
         });
         add(assignToMeBtn);
-        assignToMeBtn.setBounds(104, 309, 119, 27);
+        assignToMeBtn.setBounds(820, 230, 136, 29);
 
         processAndUpdateBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         processAndUpdateBtn.setText("Process");
@@ -112,7 +104,11 @@ public class DoctorJPanel extends javax.swing.JPanel {
             }
         });
         add(processAndUpdateBtn);
-        processAndUpdateBtn.setBounds(504, 309, 83, 27);
+        processAndUpdateBtn.setBounds(690, 230, 96, 29);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/animated-doctor-gif-5.gif"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(0, 0, 520, 770);
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeBtnActionPerformed
@@ -159,10 +155,9 @@ public class DoctorJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignToMeBtn;
     private javax.swing.JTable doctorTbl;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton processAndUpdateBtn;
-    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 
     public void populateReceivedRequests() {

@@ -33,7 +33,7 @@
     <Component class="javax.swing.JTextField" name="eventName">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="213" y="319" width="132" height="-1"/>
+          <AbsoluteConstraints x="210" y="320" width="170" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -82,7 +82,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="210" y="357" width="136" height="-1"/>
+          <AbsoluteConstraints x="210" y="357" width="170" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -241,7 +241,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="213" y="278" width="-1" height="-1"/>
+          <AbsoluteConstraints x="210" y="280" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

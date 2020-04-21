@@ -67,6 +67,8 @@ public class FundManager extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 189, 69));
+
         fundManageTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},

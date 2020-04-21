@@ -92,6 +92,7 @@ public class Systemadminworkareajpanel extends javax.swing.JPanel {
         manageenterprisebtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
+        Ecosystem.setBackground(new java.awt.Color(204, 255, 153));
         jScrollPane1.setViewportView(Ecosystem);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -112,6 +113,8 @@ public class Systemadminworkareajpanel extends javax.swing.JPanel {
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(240, 184, 69));
 
         manageenterpriseadminbtn.setFont(new java.awt.Font("Tahoma", 2, 15)); // NOI18N
         manageenterpriseadminbtn.setText("Manage Enterprise Admin");

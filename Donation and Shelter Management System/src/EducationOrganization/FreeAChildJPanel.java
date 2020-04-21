@@ -75,6 +75,8 @@ public class FreeAChildJPanel extends javax.swing.JPanel {
         phyCombo = new javax.swing.JComboBox<>();
         workCombo = new javax.swing.JComboBox<>();
 
+        setBackground(new java.awt.Color(240, 189, 69));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Basic Information before Relieving Child");
 

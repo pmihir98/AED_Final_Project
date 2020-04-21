@@ -7,7 +7,7 @@ package Govt_HealthCare;
 
 /**
  *
- * @author Mihir
+ * @author Utkarsh
  */
 public class LabJPanel extends javax.swing.JPanel {
 

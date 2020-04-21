@@ -96,12 +96,12 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(0, 14, 80, 25);
+        jButton1.setBounds(0, 14, 80, 29);
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel5.setText("Contact");
         add(jLabel5);
-        jLabel5.setBounds(322, 403, 70, 19);
+        jLabel5.setBounds(322, 403, 70, 17);
 
         empPhoneTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +109,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(empPhoneTxt);
-        empPhoneTxt.setBounds(462, 400, 144, 20);
+        empPhoneTxt.setBounds(462, 400, 144, 26);
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel6.setText("Address");
@@ -139,7 +139,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         AddComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(AddComboBox);
-        AddComboBox.setBounds(462, 322, 144, 20);
+        AddComboBox.setBounds(462, 322, 144, 27);
 
         emplNameTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,7 +147,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(emplNameTxt);
-        emplNameTxt.setBounds(462, 362, 144, 20);
+        emplNameTxt.setBounds(460, 360, 144, 26);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel1.setText("Organization");
@@ -167,7 +167,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(displayComboBox);
-        displayComboBox.setBounds(278, 55, 179, 21);
+        displayComboBox.setBounds(278, 55, 179, 27);
 
         empAddTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,7 +175,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(empAddTxt);
-        empAddTxt.setBounds(462, 438, 144, 20);
+        empAddTxt.setBounds(462, 438, 144, 26);
 
         deleteEmpBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         deleteEmpBtn.setText("Delete");
@@ -195,7 +195,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(addEmpBtn);
-        addEmpBtn.setBounds(531, 470, 70, 25);
+        addEmpBtn.setBounds(531, 470, 70, 29);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         jLabel4.setText("Employees of an Organisation");
@@ -210,7 +210,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton2);
-        jButton2.setBounds(60, 321, 186, 25);
+        jButton2.setBounds(60, 321, 186, 29);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

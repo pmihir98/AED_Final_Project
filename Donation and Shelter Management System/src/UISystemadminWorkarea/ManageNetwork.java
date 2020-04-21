@@ -67,6 +67,8 @@ public class ManageNetwork extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         deleteBtn = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+
         networkJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},

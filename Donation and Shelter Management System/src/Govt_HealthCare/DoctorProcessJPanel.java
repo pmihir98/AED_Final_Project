@@ -25,7 +25,7 @@ import userInterface.publicDonation.PublicDonationManager;
 
 /**
  *
- * @author Mihir
+ * @author Utkarsh
  */
 public class DoctorProcessJPanel extends javax.swing.JPanel {
 

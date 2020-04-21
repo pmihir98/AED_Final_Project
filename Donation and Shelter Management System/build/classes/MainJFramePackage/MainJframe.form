@@ -69,26 +69,26 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Calibri" size="14" style="1"/>
+                  <Font name="Calibri" size="14" style="3"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="71" width="68" height="-1"/>
+                  <AbsoluteConstraints x="12" y="71" width="80" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Calibri" size="14" style="1"/>
+                  <Font name="Calibri" size="14" style="3"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="144" width="68" height="-1"/>
+                  <AbsoluteConstraints x="12" y="144" width="80" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
