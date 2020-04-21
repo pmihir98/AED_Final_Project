@@ -80,12 +80,12 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
         add(jLabel1);
-        jLabel1.setBounds(103, 38, 109, 23);
+        jLabel1.setBounds(103, 38, 138, 22);
 
         valueLabel.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
         add(valueLabel);
-        valueLabel.setBounds(218, 35, 259, 24);
+        valueLabel.setBounds(250, 40, 272, 22);
 
         backBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         backBtn.setText("<<Back");
@@ -95,22 +95,22 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
             }
         });
         add(backBtn);
-        backBtn.setBounds(1, 36, 73, 25);
+        backBtn.setBounds(1, 36, 91, 29);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel2.setText("Issue/Concern: ");
         add(jLabel2);
-        jLabel2.setBounds(103, 121, 114, 23);
+        jLabel2.setBounds(103, 121, 136, 22);
 
         issueLabel.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         issueLabel.setText("<issue>");
         add(issueLabel);
-        issueLabel.setBounds(262, 121, 229, 23);
+        issueLabel.setBounds(262, 121, 229, 22);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel4.setText("Prescription: ");
         add(jLabel4);
-        jLabel4.setBounds(103, 191, 96, 23);
+        jLabel4.setBounds(103, 191, 114, 22);
 
         presTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,7 +128,7 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(103, 299, 77, 27);
+        jButton1.setBounds(103, 299, 93, 29);
     }// </editor-fold>//GEN-END:initComponents
 
     private void presTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_presTxtActionPerformed
@@ -198,7 +198,9 @@ public class DoctorProcessJPanel extends javax.swing.JPanel {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        
+        rightJPanel.remove(this);
+        CardLayout layout = (CardLayout) rightJPanel.getLayout();
+        layout.previous(rightJPanel);   
     }//GEN-LAST:event_backBtnActionPerformed
 
 
