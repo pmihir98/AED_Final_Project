@@ -200,7 +200,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         jLabel4.setText("Employees of an Organisation");
         add(jLabel4);
-        jLabel4.setBounds(150, 10, 340, 30);
+        jLabel4.setBounds(150, 10, 430, 30);
 
         jButton2.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         jButton2.setText("Add new Employee?");

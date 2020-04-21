@@ -177,7 +177,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
         add(valueLabel);
-        valueLabel.setBounds(168, 34, 272, 22);
+        valueLabel.setBounds(200, 30, 272, 22);
     }// </editor-fold>//GEN-END:initComponents
 
     private void evntDateTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evntDateTimeActionPerformed

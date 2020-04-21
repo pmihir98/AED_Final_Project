@@ -132,12 +132,12 @@ public class ReqToGovJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel2.setText("Reason");
         add(jLabel2);
-        jLabel2.setBounds(87, 285, 61, 22);
+        jLabel2.setBounds(87, 285, 80, 22);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel3.setText("Amount");
         add(jLabel3);
-        jLabel3.setBounds(87, 319, 72, 22);
+        jLabel3.setBounds(87, 319, 80, 22);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel4.setText("Enter the reason and Amount below ");
