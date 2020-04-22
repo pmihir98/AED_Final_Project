@@ -1,0 +1,9 @@
+userinterface.AdministrativeRole.ManageEmployeeJPanel$3
+userinterface.AdministrativeRole.ManageEmployeeJPanel$4
+userinterface.AdministrativeRole.ManageEmployeeJPanel$1
+userinterface.AdministrativeRole.ManageEmployeeJPanel$2
+userinterface.AdministrativeRole.ManageEmployeeJPanel$7
+userinterface.AdministrativeRole.ManageEmployeeJPanel
+userinterface.AdministrativeRole.ManageEmployeeJPanel$8
+userinterface.AdministrativeRole.ManageEmployeeJPanel$5
+userinterface.AdministrativeRole.ManageEmployeeJPanel$6
