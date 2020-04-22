@@ -92,19 +92,19 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
         add(addBtn);
-        addBtn.setBounds(431, 456, 118, 27);
+        addBtn.setBounds(431, 456, 118, 29);
 
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Source of Income");
         add(jLabel3);
-        jLabel3.setBounds(143, 385, 110, 19);
+        jLabel3.setBounds(143, 385, 119, 17);
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel4.setText("Amount (in $)");
         add(jLabel4);
-        jLabel4.setBounds(143, 417, 113, 19);
+        jLabel4.setBounds(143, 417, 113, 17);
         add(totalIncomeTxt);
-        totalIncomeTxt.setBounds(407, 359, 142, 20);
+        totalIncomeTxt.setBounds(407, 359, 142, 26);
 
         amountTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,12 +112,12 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
         add(amountTxt);
-        amountTxt.setBounds(407, 418, 142, 20);
+        amountTxt.setBounds(407, 418, 142, 26);
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel5.setText("Total Income");
         add(jLabel5);
-        jLabel5.setBounds(143, 358, 81, 19);
+        jLabel5.setBounds(143, 358, 89, 17);
 
         sourceIncomeTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
         add(sourceIncomeTxt);
-        sourceIncomeTxt.setBounds(407, 386, 142, 20);
+        sourceIncomeTxt.setBounds(407, 386, 142, 26);
 
         workQueTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -159,7 +159,7 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
             }
         });
         add(approveReqBtn);
-        approveReqBtn.setBounds(410, 318, 139, 27);
+        approveReqBtn.setBounds(410, 318, 157, 29);
 
         incomeTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -180,12 +180,12 @@ public class FinanceDeptJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel2.setText("Organization: ");
         add(jLabel2);
-        jLabel2.setBounds(111, 11, 105, 23);
+        jLabel2.setBounds(111, 11, 132, 22);
 
         valLable.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valLable.setText("value_label");
         add(valLable);
-        valLable.setBounds(243, 11, 86, 23);
+        valLable.setBounds(260, 10, 106, 22);
     }// </editor-fold>//GEN-END:initComponents
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
