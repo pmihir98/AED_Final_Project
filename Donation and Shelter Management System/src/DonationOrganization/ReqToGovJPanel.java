@@ -80,12 +80,12 @@ public class ReqToGovJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
         add(enterpriseLabel);
-        enterpriseLabel.setBounds(11, 26, 127, 30);
+        enterpriseLabel.setBounds(11, 26, 180, 30);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         valueLabel.setText("<replace_by_enterprise_name>");
         add(valueLabel);
-        valueLabel.setBounds(169, 28, 319, 26);
+        valueLabel.setBounds(240, 30, 389, 26);
 
         tableReq.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -112,7 +112,7 @@ public class ReqToGovJPanel extends javax.swing.JPanel {
         }
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(87, 107, 452, 144);
+        jScrollPane1.setBounds(87, 107, 454, 144);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel1.setText("Fund Request");
@@ -127,26 +127,26 @@ public class ReqToGovJPanel extends javax.swing.JPanel {
             }
         });
         add(requestBtn);
-        requestBtn.setBounds(538, 421, 85, 27);
+        requestBtn.setBounds(538, 421, 99, 29);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel2.setText("Reason");
         add(jLabel2);
-        jLabel2.setBounds(87, 285, 61, 23);
+        jLabel2.setBounds(87, 285, 80, 22);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel3.setText("Amount");
         add(jLabel3);
-        jLabel3.setBounds(87, 319, 62, 23);
+        jLabel3.setBounds(87, 319, 80, 22);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel4.setText("Enter the reason and Amount below ");
         add(jLabel4);
-        jLabel4.setBounds(87, 257, 229, 17);
+        jLabel4.setBounds(87, 257, 300, 17);
         add(reasonTxt);
-        reasonTxt.setBounds(205, 287, 182, 20);
+        reasonTxt.setBounds(205, 287, 182, 26);
         add(amountTxt);
-        amountTxt.setBounds(205, 321, 182, 20);
+        amountTxt.setBounds(205, 321, 182, 26);
 
         jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton1.setText("<<Back");
@@ -156,7 +156,7 @@ public class ReqToGovJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1);
-        jButton1.setBounds(11, 421, 79, 27);
+        jButton1.setBounds(11, 421, 97, 29);
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestBtnActionPerformed

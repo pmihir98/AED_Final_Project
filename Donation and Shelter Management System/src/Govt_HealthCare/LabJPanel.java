@@ -5,6 +5,9 @@
  */
 package Govt_HealthCare;
 
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Utkarsh
@@ -14,8 +17,11 @@ public class LabJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabJPanel
      */
-    public LabJPanel() {
+    
+    private JPanel rightJPanel;
+    public LabJPanel(JPanel rightJPanel) {
         initComponents();
+        this.rightJPanel = rightJPanel;
     }
 
     /**
@@ -27,7 +33,7 @@ public class LabJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        backBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
@@ -35,15 +41,15 @@ public class LabJPanel extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        jButton1.setText("<<Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        backBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        backBtn.setText("<<Back");
+        backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                backBtnActionPerformed(evt);
             }
         });
-        add(jButton1);
-        jButton1.setBounds(11, 12, 73, 25);
+        add(backBtn);
+        backBtn.setBounds(11, 12, 100, 29);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -62,14 +68,18 @@ public class LabJPanel extends javax.swing.JPanel {
         jScrollPane1.setBounds(155, 82, 483, 167);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
+        rightJPanel.remove(this);
+        CardLayout layout = (CardLayout) rightJPanel.getLayout();
+        layout.previous(rightJPanel);   
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_backBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton backBtn;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

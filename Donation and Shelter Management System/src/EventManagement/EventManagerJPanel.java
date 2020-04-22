@@ -71,29 +71,29 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         HealthCareBtn = new javax.swing.JButton();
         AddEventBtn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        eventTypeBox = new javax.swing.JComboBox<String>();
+        eventTypeBox = new javax.swing.JComboBox<>();
         valueLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 184, 69));
         setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 51, 51)));
         setLayout(null);
         add(eventName);
-        eventName.setBounds(213, 319, 132, 20);
+        eventName.setBounds(210, 320, 170, 26);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel2.setText("Schedule Event:");
         add(jLabel2);
-        jLabel2.setBounds(53, 243, 89, 17);
+        jLabel2.setBounds(53, 243, 107, 17);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel4.setText("Event date and Time:");
         add(jLabel4);
-        jLabel4.setBounds(53, 359, 120, 17);
+        jLabel4.setBounds(53, 359, 143, 17);
 
         updateEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         updateEventBtn.setText("Update");
         add(updateEventBtn);
-        updateEventBtn.setBounds(138, 397, 73, 25);
+        updateEventBtn.setBounds(138, 397, 86, 29);
 
         evntDateTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +101,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
         add(evntDateTime);
-        evntDateTime.setBounds(210, 357, 136, 20);
+        evntDateTime.setBounds(210, 357, 170, 26);
 
         deleteEvntBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         deleteEvntBtn.setText("Delete");
@@ -111,17 +111,17 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
         add(deleteEvntBtn);
-        deleteEvntBtn.setBounds(229, 397, 69, 25);
+        deleteEvntBtn.setBounds(229, 397, 81, 29);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel3.setText("Event Name:");
         add(jLabel3);
-        jLabel3.setBounds(53, 321, 73, 17);
+        jLabel3.setBounds(53, 321, 84, 17);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
         add(jLabel1);
-        jLabel1.setBounds(53, 34, 109, 23);
+        jLabel1.setBounds(53, 34, 138, 22);
 
         eventsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -147,7 +147,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
         add(HealthCareBtn);
-        HealthCareBtn.setBounds(367, 395, 196, 27);
+        HealthCareBtn.setBounds(367, 395, 196, 29);
 
         AddEventBtn.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         AddEventBtn.setText("Add ");
@@ -157,7 +157,7 @@ public class EventManagerJPanel extends javax.swing.JPanel {
             }
         });
         add(AddEventBtn);
-        AddEventBtn.setBounds(53, 397, 67, 25);
+        AddEventBtn.setBounds(53, 397, 67, 29);
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel5.setText("Event Type");
@@ -165,19 +165,19 @@ public class EventManagerJPanel extends javax.swing.JPanel {
         jLabel5.setBounds(53, 281, 73, 17);
 
         eventTypeBox.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        eventTypeBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cultural", "SexualAwareness", "Sports" }));
+        eventTypeBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cultural", "SexualAwareness", "Sports" }));
         eventTypeBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eventTypeBoxActionPerformed(evt);
             }
         });
         add(eventTypeBox);
-        eventTypeBox.setBounds(213, 278, 125, 23);
+        eventTypeBox.setBounds(210, 280, 176, 27);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
         add(valueLabel);
-        valueLabel.setBounds(168, 34, 228, 23);
+        valueLabel.setBounds(200, 30, 272, 22);
     }// </editor-fold>//GEN-END:initComponents
 
     private void evntDateTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evntDateTimeActionPerformed

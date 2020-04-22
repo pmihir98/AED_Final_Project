@@ -76,12 +76,12 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel1.setText("Organization:  ");
         add(jLabel1);
-        jLabel1.setBounds(189, 23, 123, 23);
+        jLabel1.setBounds(189, 23, 160, 22);
 
         valueLabel.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         valueLabel.setText("<change_it_to_name_of_org>");
         add(valueLabel);
-        valueLabel.setBounds(322, 23, 228, 23);
+        valueLabel.setBounds(370, 20, 272, 22);
 
         backBtn.setBackground(new java.awt.Color(240, 189, 64));
         backBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -92,7 +92,7 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
             }
         });
         add(backBtn);
-        backBtn.setBounds(72, 23, 89, 22);
+        backBtn.setBounds(20, 20, 89, 22);
 
         childTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,7 +121,7 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel2.setText("Select student for health Check up from below table");
         add(jLabel2);
-        jLabel2.setBounds(11, 79, 379, 23);
+        jLabel2.setBounds(11, 79, 455, 22);
 
         sendtoHealthCareBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         sendtoHealthCareBtn.setText("Send to Health Care Center");
@@ -131,14 +131,14 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
             }
         });
         add(sendtoHealthCareBtn);
-        sendtoHealthCareBtn.setBounds(295, 379, 255, 27);
+        sendtoHealthCareBtn.setBounds(295, 379, 255, 29);
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel3.setText("Problem");
         add(jLabel3);
         jLabel3.setBounds(177, 337, 85, 17);
         add(probTxt);
-        probTxt.setBounds(294, 335, 256, 20);
+        probTxt.setBounds(294, 335, 256, 26);
     }// </editor-fold>//GEN-END:initComponents
 
     private void sendtoHealthCareBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendtoHealthCareBtnActionPerformed

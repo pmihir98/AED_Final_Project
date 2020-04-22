@@ -95,6 +95,8 @@ public class ManageEnterpriseadminJpanel extends javax.swing.JPanel {
         deleteButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

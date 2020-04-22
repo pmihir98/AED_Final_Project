@@ -59,6 +59,8 @@ public class PublicDonationManager extends javax.swing.JPanel {
         donationsListTable = new javax.swing.JTable();
         donateOrphangePublicBtn = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
 

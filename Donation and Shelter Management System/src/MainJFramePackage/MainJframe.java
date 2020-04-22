@@ -66,15 +66,15 @@ public class MainJframe extends javax.swing.JFrame {
         leftPanel.setPreferredSize(new java.awt.Dimension(150, 500));
         leftPanel.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         jLabel1.setText("Username");
         leftPanel.add(jLabel1);
-        jLabel1.setBounds(12, 71, 68, 17);
+        jLabel1.setBounds(12, 71, 80, 17);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
         jLabel2.setText("Password");
         leftPanel.add(jLabel2);
-        jLabel2.setBounds(12, 144, 68, 17);
+        jLabel2.setBounds(12, 144, 80, 17);
 
         userNameJTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class MainJframe extends javax.swing.JFrame {
             }
         });
         leftPanel.add(logoutJButton);
-        logoutJButton.setBounds(12, 290, 84, 27);
+        logoutJButton.setBounds(12, 290, 84, 29);
 
         loginJButton.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         loginJButton.setText("Login");
@@ -102,7 +102,7 @@ public class MainJframe extends javax.swing.JFrame {
             }
         });
         leftPanel.add(loginJButton);
-        loginJButton.setBounds(12, 251, 84, 27);
+        loginJButton.setBounds(12, 251, 84, 29);
         leftPanel.add(passwordField);
         passwordField.setBounds(12, 179, 84, 30);
 

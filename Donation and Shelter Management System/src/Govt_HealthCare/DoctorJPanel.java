@@ -94,7 +94,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
             }
         });
         add(assignToMeBtn);
-        assignToMeBtn.setBounds(820, 230, 119, 27);
+        assignToMeBtn.setBounds(820, 230, 136, 29);
 
         processAndUpdateBtn.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         processAndUpdateBtn.setText("Process");
@@ -104,7 +104,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
             }
         });
         add(processAndUpdateBtn);
-        processAndUpdateBtn.setBounds(690, 230, 83, 27);
+        processAndUpdateBtn.setBounds(690, 230, 96, 29);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/animated-doctor-gif-5.gif"))); // NOI18N
         add(jLabel2);
@@ -122,7 +122,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
         WorkRequest sendToGovtHealthCareWorkRequest = (WorkRequest) doctorTbl.getValueAt(selectedRow, 0);
          if(sendToGovtHealthCareWorkRequest instanceof  SendToGovtHealthCareWorkRequest){
              sendToGovtHealthCareWorkRequest.setReceiver(userAccount);
-         }
+         } 
          
          populateReceivedRequests();
     }//GEN-LAST:event_assignToMeBtnActionPerformed

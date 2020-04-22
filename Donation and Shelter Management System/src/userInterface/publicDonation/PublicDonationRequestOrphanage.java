@@ -82,6 +82,8 @@ public class PublicDonationRequestOrphanage extends javax.swing.JPanel {
         backBtn = new javax.swing.JButton();
         DistributerBtn = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 184, 69));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("EnterPrise :");
 
