@@ -15,10 +15,13 @@ import userInterface.publicDonation.PublicDonationManager;
 
 /**
  *
- * @author Utkarsh
+ * @author Utkarsh 
  */
 public class CounsellorSolutionJPanel extends javax.swing.JPanel {
 
+    /**
+     * Creates new form CounsellorSolutionJPanel
+     */
     /**
      * Creates new form CounsellorSolutionJPanel
      */
