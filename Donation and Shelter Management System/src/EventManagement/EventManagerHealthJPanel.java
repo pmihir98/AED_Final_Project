@@ -92,7 +92,7 @@ public class EventManagerHealthJPanel extends javax.swing.JPanel {
             }
         });
         add(backBtn);
-        backBtn.setBounds(72, 23, 89, 22);
+        backBtn.setBounds(20, 20, 89, 22);
 
         childTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
